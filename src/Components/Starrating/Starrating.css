@@ -1,0 +1,126 @@
+@charset "UTF-8";
+.radio-stars {
+  display: inline-block;
+  position: relative;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  counter-reset: star-rating;
+  font-size: 0;
+  padding-top:50px;
+}
+.radio-stars:hover .radio-star::before {
+  content: "☆";
+}
+.radio-stars:hover .radio-star:hover::before,
+.radio-stars:hover .radio-star:hover ~ .radio-star::before {
+  content: "★";
+}
+.starrating-all{
+    margin: 60px 0px 0px 0px;
+}
+.star-num{
+    font-weight: 700;
+    font-size: 18px;
+}
+.view-count{
+    font-weight: 600;
+    color: #878484;
+    font-size: 18px;
+}
+.bar-all{
+    margin: 20px 0px 0px 0px;;
+}
+.radio-star {
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0 2px;
+  width: 0.9em;
+  direction: ltr;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 40px;
+  white-space: nowrap;
+}
+.radio-star::before {
+  content: "☆";
+}
+.radio-star:hover, .radio-star:hover ~ .radio-star, input:checked ~ .radio-star {
+  color: orange;
+}
+input:checked ~ .radio-star {
+  counter-increment: star-rating;
+}
+input:checked ~ .radio-star::before {
+  content: "★";
+}
+
+.viwers{
+    color:#000;
+    font-weight: 700;
+    font-size: 12px;
+    position: absolute;
+    top:45px;
+    left:50px;
+}
+
+.radio-star-total {
+  pointer-events: none;
+  direction: ltr;
+  unicode-bidi: bidi-override;
+  position: absolute;
+  left:60px;
+  top: 0px;
+  color: gray;
+  color: #000;
+  font-size: 30px;
+}
+.radio-star-total::before {
+  content: counter(star-rating)".0";
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.greenbar{
+   height:5px;
+   width: 200px;
+   margin-top: 10px;
+}
+
+.progress-bar{
+    background-color: green;
+}
+.bar{
+    display: flex;
+    gap:20px;
+}
+.sheld{
+    width:15px;
+    fill: green;
+}
+.command-rating{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.command-img img{
+    width:80px;
+    height:100px;
+}
+.command-img {
+    display: flex;
+    gap:20px;
+}
+.command-over-all{
+    padding:20px 0px;
+}
+
+
+

@@ -1,0 +1,83 @@
+.card-price{
+    display: flex;
+    gap:10px;
+}
+.card-price p{
+    margin:0px;
+}
+.heart{
+    width:15px;
+}
+.card-overall{
+    border:2px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+    margin:20px 5px;
+}
+.card-overall img{
+    width:100%;
+    border-radius: 20px !important;
+    padding:2px;
+}
+.addtocartbtn{
+    border-top: 2px solid #ccc;
+}
+.recentelyviewed-overall{
+    padding-bottom:50px;
+}
+.card-cart-btn{
+    border-right: 1px solid #ccc;
+    padding:10px 0px 0px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+.card-wislist-btn{
+    padding:10px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+.card-cart-btn>p{
+    margin:0px !important;
+}
+.card-content{
+    padding:15px 15px 0px 15px;
+}
+
+p.tag {
+    position: absolute;
+    color: green;
+    background-color: #00800052;
+    width: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    position: absolute;
+    top:15px;
+}
+.sililar-product-overall{
+    padding:50px 0px;
+}
+.Similearproductsrow{
+    padding-top:20px;
+}
+.section-title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.slick-next:before, .slick-prev:before {
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #ff841f !important;
+}
+.multicolor img{
+    width:40px;
+}
+.multicolor{
+    display: flex;
+    margin-top:20px;
+}
+.colormulti{
+    display: flex;
+    justify-content: space-between;
+    
+}
